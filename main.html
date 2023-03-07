@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="main.css">
+    <title>Capital One Bank</title>
+</head>
+<body>
+    <div class="container">
+        <!------First Content------->
+        <div class="sidenav" id="navlinks">
+            <i class="fa-solid fa-xmark" onclick="hideMenu()"></i>
+            <div class="header">
+                <img src="logo2.PNG" alt="image" width="40%">
+            </div>
+            <div class="lists">
+                    <a href="main.html" class="menuList active">Dashboard</a>
+                    <a href="#" class="menuList">Card Payment</a>
+                    <a href="trans.html" class="menuList">Transaction History</a>
+                    <a href="setting.html" class="menuList">Settings</a>
+                    <a href="index.html" class="menuList">Logout</a>
+            </div>
+        </div>
+         <!------Middle content------->
+        <div class="content">
+            <div class="first-content">    
+                <h1><span>WELCOME, </span>Arianna Smith</h1>
+                <i class="fa-solid fa-bars" onclick="showMenu()"></i>
+            </div>
+            <div class="second-content">
+                <div class="notes">
+                    <h3><b>Available Balance:</b></h3>
+                    <h1><img src="bank-icon-5983.png" alt="bank icon" width="40px"> $60,453.20</h1>
+                </div>
+                
+                <div class="button">
+                    <button type="button" id="button" onclick="openPopup()">Transfer</button>
+                </div>
+            </div>
+            <div class="popup" id="popup">
+                <img src="error.png" alt="thick-mark" class="img">
+                <h2>Declined</h2>
+                <h6>You will have to deposit before you Transfer any funds.</h6>
+                <button type="button" onclick="closePopup()">OK</button>
+            </div>
+            <div class="third-content">
+                <h1>Transaction History</h1>
+                <div class="table">
+                    <table>
+                        <tr>
+                            <th>Account Name</th>
+                            <th>Description</th>
+                            <th>Date</th>
+                            <th>Amount($)</th>
+                        </tr>
+                        <tr>
+                            <td>Brightpoint inc.</td>
+                            <td>Tax Refund</td>
+                            <td>20-02-2023</td>
+                            <td><span class="green">+$20,700.20</span></td>
+                        </tr>
+                        <tr>
+                            <td>Amgen inc</td>
+                            <td>Insurance Paid</td>
+                            <td>25-02-2022</td>
+                            <td><span class="green">+$24,400.00</span></td>
+                        </tr>
+                        <tr>
+                            <td>Elizabeth Mary</td>
+                            <td>Income Tax</td>
+                            <td>30-11-2021</td>
+                            <td class="green">+$19,970.00</td>
+                        </tr>
+                        <tr>
+                            <td>Johnson Tyler</td>
+                            <td>Operating Expenses</td>
+                            <td>10-06-2021</td>
+                            <td class="red">-$5,940.00</td>
+                        </tr>
+                        <tr>
+                            <td>Robbin Gordon</td>
+                            <td>Payroll and Wages</td>
+                            <td>23-11-2020</td>
+                            <td><span>+$5,375.10</span></td>
+                        </tr>
+                        <tr class="hide">
+                            <td>Brightpoint inc.</td>
+                            <td>Property Tax</td>
+                            <td>17-09-2020</td>
+                            <td class="red">-$20,700.20</td>
+                        </tr>
+                        <tr class="hide">
+                            <td>Brian Koller</td>
+                            <td>CashApp</td>
+                            <td>30-07-2020</td>
+                            <td class="red">-$10,089.20</td>
+                        </tr>
+                        <tr class="hide">
+                            <td>John coke</td>
+                            <td>Paypal</td>
+                            <td>05-05-2020</td>
+                            <td><span>+$3,900.00</span></td>
+                        </tr>
+                        <tr class="hide">
+                            <td>Brian Koller</td>
+                            <td>License</td>
+                            <td>17-08-2019</td>
+                            <td class="red">-$15,460.00</td>
+                        </tr>
+                        <tr class="hide">
+                            <td>Elizabeth Mary</td>
+                            <td>Product Costs</td>
+                            <td>13-03-2019</td>
+                            <td><span>+$20,040.76</span></td>
+                        </tr>
+                        <tr class="hide">
+                            <td>Mary May</td>
+                            <td>Expenses</td>
+                            <td>22-01-2019</td>
+                            <td class="red">-$23,507,400</td>
+                        </tr>
+                        <tr class="hide">
+                            <td>Capra Guy</td>
+                            <td>Current Asset</td>
+                            <td>11-01-2019</td>
+                            <td class="green">+$50,600.00</td>
+                        </tr>
+                        <tr class="hide">
+                            <td>Brian Coman</td>
+                            <td>Walmart</td>
+                            <td>11-12-2018</td>
+                            <td><span>+$2,500.00</span></td>
+                        </tr>
+                        <tr class="hide">
+                            <td>Donald Roger</td>
+                            <td>CashApp</td>
+                            <td>21-10-2018</td>
+                            <td class="red">-$10,050.00</td>
+                        </tr>
+                        <tr class="hide">
+                            <td>Marcus Whiteman</td>
+                            <td>Paypal</td>
+                            <td>16-09-2018</td>
+                            <td class="red">-$1,200.00</td>
+                        </tr>
+                        <tr class="hide">
+                            <td>Brian Koller</td>
+                            <td>Wells Fago</td>
+                            <td>11-05-2018</td>
+                            <td><span>+$10,000.00</span></td>
+                        </tr>
+                        <tr class="hide">
+                            <td>Robert David</td>
+                            <td>CashApp</td>
+                            <td>21-03-2018</td>
+                            <td class="red">+$24,690.00</td>
+                        </tr>
+                        <!--
+                        <tr class="hide">
+                            <td>Howrad Jerry</td>
+                            <td>Wells Fago</td>
+                            <td class="green">Credit</td>
+                            <td><span>$1,400.00</span></td>
+                        </tr>
+                        <tr class="hide">
+                            <td>Jackie Larry</td>
+                            <td>CashApp</td>
+                            <td class="red">Debit</td>
+                            <td class="red">$900.00</td>
+                        </tr> -->
+                    </table>
+                </div>        
+            </div>
+                <!-- <div class="button-table">
+                   <button>See More</button> 
+                </div> -->
+            <!-- </div> -->
+        </div>
+         <!------Last end content------->
+        <div class="sidenav-2">
+            <div class="images-settings">
+                <img src="message.png" alt="" width="40px">
+                <img src="Iohy.PNG" alt="" width="40px">
+                <img src="Icon.PNG" alt="" width="40px">
+            </div>
+            <div class="search-box">
+                <form action="#">
+                    <input type="search " name="" id="" placeholder="Transactions">
+                </form>
+            </div>
+            <div class="text-progress">
+                <h1>Transaction progress</h1>
+            </div>
+            <div class="progress-bar">
+                <div class="value">95%</div>
+            </div>
+            <div class="progress-notes">
+               <h1>Notifications</h1>
+               <div class="card-message">
+                    <div class="list-head">
+                        <div class="list">
+                            <div class="head">
+                                <h4>ARIANNA SMITH</h4>
+                                <p>This is a new message for Arianna Smith</p>
+                            </div>
+                            <img src="1.PNG" alt="" width="20px" height="20px">
+                        </div>
+                        <div class="list">
+                            <div class="head">
+                                <h4>ARIANNA SMITH</h4>
+                                <p>This is a new message for Arianna Smith</p>
+                            </div>
+                            <img src="1.PNG" alt="" width="20px" height="20px">
+                        </div>
+                        <div class="list">
+                            <div class="head">
+                                <h4>ARIANNA SMITH</h4>
+                                <p>This is a new message for Arianna Smith</p>
+                            </div>
+                            <img src="1.PNG" alt="" width="20px" height="20px">
+                        </div>
+                        <div class="list">
+                            <div class="head">
+                                <h4>ARIANNA SMITH</h4>
+                                <p>This is a new message for Arianna Smith</p>
+                            </div>
+                            <img src="1.PNG" alt="" width="20px" height="20px">
+                        </div>
+                    </div>
+               </div>
+
+            </div>
+        </div>
+    </div>
+
+    <!--javascript placement here......-->
+    <script>
+         // -----------MenuLists------------
+        const menuLists = document.querySelectorAll(".menuList");
+
+        const changeActiveitem = () =>{
+            menuLists.forEach(item => {
+                item.classList.remove("active");
+            })
+        }
+
+        menuLists.forEach(item =>{
+            item.addEventListener("click", () =>{
+                changeActiveitem();
+                item.classList.add("active");
+            })
+        })
+                // ---------Popups----------
+        let popup = document.getElementById("popup");
+        function openPopup(){
+            popup.classList.add("open-popup");
+        }
+        function closePopup(){
+            popup.classList.remove("open-popup");
+        }
+
+            var navlinks = document.getElementById("navlinks");
+            function showMenu(){
+                navlinks.style.right = "0";
+            }
+            function hideMenu(){
+                navlinks.style.right = "-220px";
+            }
+    </script>
+</body>
+</html>
